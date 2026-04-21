@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Title</title>
+  <style>
+    /* ── RESET ── */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; }
+    a { text-decoration: none; }
+    ul { list-style: none; }
+    img { max-width: 100%; }
+    input, button, select, textarea { font-family: inherit; }
+
+    /* ── REUSABLE UTILITIES ── */
+    .btn {
+      display: inline-block; padding: 10px 24px;
+      background: #2563eb; color: #fff;
+      border: none; border-radius: 6px;
+      cursor: pointer; font-weight: 600;
+    }
+    .card {
+      background: #fff; padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    /* ── YOUR QUESTION CSS BELOW ── */
+
+
+  </style>
+</head>
+<body>
+
+  <!-- YOUR HTML BELOW -->
+<form action="/register" method="POST">
+
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <!-- TEXT INPUT: label for="" must match input id="" -->
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname"
+           placeholder="Enter full name" required>
+
+    <!-- EMAIL INPUT -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"
+           placeholder="name@students.uiu.ac.bd" required>
+
+    <!-- PASSWORD -->
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="password"
+           placeholder="Enter password" minlength="8">
+
+    <!-- DROPDOWN -->
+    <label for="dept">Department:</label>
+    <select id="dept" name="dept">
+      <option value="">-- Select --</option>
+      <option value="cse">CSE</option>
+      <option value="eee">EEE</option>
+    </select>
+
+    <!-- CHECKBOX -->
+    <input type="checkbox" id="agree" name="agree" required>
+    <label for="agree">I agree to the Terms of Service</label>
+  </fieldset>
+
+  <button type="reset">Clear</button>
+  <button type="submit">Register</button>
+
+</form>
+
+
+
+
+</body>
+</html>
