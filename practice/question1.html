@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPulse Dashboard</title>
+    <link rel="stylesheet" href="question1.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <div class="brand-logo">
+                <div class="logo-circle">FP</div>
+                <div class="logo-text">FitPulse</div>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item active">Dashboard</div>
+                <div class="menu-item">Schedule</div>
+                <div class="menu-item">My Bookings</div>
+                <div class="menu-item">Memberships</div>
+            </div>
+            <div class="sidebar-bottom">
+                <div class="menu-item">Settings</div>
+                <div class="menu-item">Log Out</div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="page-title">Class Booking</div>
+                <div class="user-info">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search classes...">
+                    </div>
+                    <div class="user-avatar">JD</div>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid Layout -->
+            <div class="dashboard-grid">
+                
+                <!-- Left Column: Available Classes -->
+                <div class="classes-section">
+                    <div class="section-title">Today's Classes</div>
+                    <div class="class-cards-grid">
+                        
+                        <!-- Card 1 -->
+                        <div class="class-card card-blue">
+                            <div class="card-header">
+                                <div class="class-name">Morning Yoga</div>
+                                <div class="class-price">$15</div>
+                            </div>
+                            <div class="class-details">
+                                <div>08:00 AM - 09:00 AM</div>
+                                <div>Instructor: Sarah T.</div>
+                            </div>
+                            <button class="btn-book">Add to Cart</button>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="class-card card-orange">
+                            <div class="card-header">
+                                <div class="class-name">HIIT Blast</div>
+                                <div class="class-price">$20</div>
+                            </div>
+                            <div class="class-details">
+                                <div>10:30 AM - 11:15 AM</div>
+                                <div>Instructor: Mike R.</div>
+                            </div>
+                            <button class="btn-book">Add to Cart</button>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="class-card card-purple">
+                            <div class="card-header">
+                                <div class="class-name">Core Pilates</div>
+                                <div class="class-price">$18</div>
+                            </div>
+                            <div class="class-details">
+                                <div>01:00 PM - 02:00 PM</div>
+                                <div>Instructor: Emma W.</div>
+                            </div>
+                            <button class="btn-book">Add to Cart</button>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="class-card card-green">
+                            <div class="card-header">
+                                <div class="class-name">Spin Cycling</div>
+                                <div class="class-price">$22</div>
+                            </div>
+                            <div class="class-details">
+                                <div>05:30 PM - 06:30 PM</div>
+                                <div>Instructor: David L.</div>
+                            </div>
+                            <button class="btn-book">Add to Cart</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Column: Booking Summary -->
+                <div class="summary-section">
+                    <div class="summary-card">
+                        <div class="summary-title">Booking Summary</div>
+                        
+                        <div class="cart-items">
+                            <div class="cart-item">
+                                <div class="item-info">
+                                    <div class="item-name">HIIT Blast</div>
+                                    <div class="item-time">10:30 AM</div>
+                                </div>
+                                <div class="item-price">$20</div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="item-info">
+                                    <div class="item-name">Spin Cycling</div>
+                                    <div class="item-time">05:30 PM</div>
+                                </div>
+                                <div class="item-price">$22</div>
+                            </div>
+                        </div>
+
+                        <div class="totals-area">
+                            <div class="total-row">
+                                <div>Subtotal</div>
+                                <div>$42.00</div>
+                            </div>
+                            <div class="total-row">
+                                <div>Tax (5%)</div>
+                                <div>$2.10</div>
+                            </div>
+                            <div class="total-row grand-total">
+                                <div>Total</div>
+                                <div>$44.10</div>
+                            </div>
+                        </div>
+
+                        <button class="btn-checkout">Confirm Booking</button>
+                        <div class="warning-text">Non-refundable after 24 hours.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Learning Portal</title>
+    <link rel="stylesheet" href="question6.css">
+</head>
+<body>
+    <div class="app-layout">
+        
+        <!-- Left Sidebar Layout -->
+        <div class="sidebar">
+            <div class="brand-logo">
+                <h2>EduDash</h2>
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item active">Dashboard</div>
+                <div class="nav-item">My Courses</div>
+                <div class="nav-item">Assignments</div>
+                <div class="nav-item">Grades</div>
+                <div class="nav-item">Schedule</div>
+            </div>
+            <div class="sidebar-bottom">
+                <div class="nav-item">Settings</div>
+                <div class="nav-item text-red">Sign Out</div>
+            </div>
+        </div>
+
+        <!-- Right Main Content Layout -->
+        <div class="main-area">
+            
+            <!-- Top Navigation Bar -->
+            <div class="top-bar">
+                <div class="page-heading">
+                    <h1>Welcome back, David!</h1>
+                    <p class="subtitle">Here is your academic overview for this semester.</p>
+                </div>
+                <div class="profile-widget">
+                    <div class="profile-icon">D</div>
+                    <div class="profile-name">David Smith</div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                
+                <!-- Overview Stats Grid -->
+                <div class="stats-row">
+                    <div class="stat-box blue-border">
+                        <div class="stat-title">Courses in Progress</div>
+                        <div class="stat-value">5</div>
+                        <div class="stat-desc">2 ending soon</div>
+                    </div>
+                    <div class="stat-box orange-border">
+                        <div class="stat-title">Pending Assignments</div>
+                        <div class="stat-value">12</div>
+                        <div class="stat-desc text-orange">3 due this week</div>
+                    </div>
+                    <div class="stat-box green-border">
+                        <div class="stat-title">Current CGPA</div>
+                        <div class="stat-value">3.84</div>
+                        <div class="stat-desc text-green">Top 10% of class</div>
+                    </div>
+                </div>
+
+                <!-- Two Column Dashboard Layout -->
+                <div class="dashboard-split">
+                    
+                    <!-- Left Column: Course Progress Bars -->
+                    <div class="panel">
+                        <div class="panel-header">Course Completion</div>
+                        
+                        <div class="progress-list">
+                            <div class="progress-row">
+                                <div class="progress-labels">
+                                    <div class="subject">Data Structures</div>
+                                    <div class="percentage">85%</div>
+                                </div>
+                                <div class="progress-background">
+                                    <div class="progress-bar fill-blue" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-row">
+                                <div class="progress-labels">
+                                    <div class="subject">Machine Learning</div>
+                                    <div class="percentage">60%</div>
+                                </div>
+                                <div class="progress-background">
+                                    <div class="progress-bar fill-purple" style="width: 60%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-row">
+                                <div class="progress-labels">
+                                    <div class="subject">Web Engineering</div>
+                                    <div class="percentage">45%</div>
+                                </div>
+                                <div class="progress-background">
+                                    <div class="progress-bar fill-orange" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="progress-row">
+                                <div class="progress-labels">
+                                    <div class="subject">Database Systems</div>
+                                    <div class="percentage">92%</div>
+                                </div>
+                                <div class="progress-background">
+                                    <div class="progress-bar fill-green" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Task Cards Grid -->
+                    <div class="panel">
+                        <div class="panel-header">Upcoming Deadlines</div>
+                        
+                        <div class="tasks-grid">
+                            <div class="task-card">
+                                <div class="task-tag bg-purple-light">Machine Learning</div>
+                                <div class="task-title">Neural Network Model</div>
+                                <div class="task-date">Due: Oct 24, 11:59 PM</div>
+                                <div class="btn-submit">Submit Work</div>
+                            </div>
+
+                            <div class="task-card">
+                                <div class="task-tag bg-blue-light">Data Structures</div>
+                                <div class="task-title">Binary Tree Project</div>
+                                <div class="task-date">Due: Oct 26, 10:00 AM</div>
+                                <div class="btn-submit">Submit Work</div>
+                            </div>
+
+                            <div class="task-card">
+                                <div class="task-tag bg-orange-light">Web Engineering</div>
+                                <div class="task-title">React UI Assignment</div>
+                                <div class="task-date">Due: Oct 28, 08:00 PM</div>
+                                <div class="btn-submit">Submit Work</div>
+                            </div>
+                            
+                            <div class="task-card empty-card">
+                                <div class="view-all-text">View All Assignments →</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

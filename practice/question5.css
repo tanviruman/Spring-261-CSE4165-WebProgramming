@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+body { background-color: #eaeff3; }
+
+/* Top Navigation */
+.top-nav { background-color: #111827; height: 60px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px; }
+.logo { color: white; font-size: 20px; font-weight: bold; letter-spacing: 0.5px; }
+.global-search { width: 400px; padding: 8px 15px; border-radius: 4px; border: none; background-color: #374151; color: white; }
+.global-search::placeholder { color: #9ca3af; }
+.profile-icon { width: 36px; height: 36px; background-color: #6366f1; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; }
+
+/* Content Wrapper */
+.content-wrapper { display: grid; grid-template-columns: 7fr 3fr; gap: 30px; padding: 40px; max-width: 1400px; margin: 0 auto; }
+
+/* Left Area */
+.area-title { font-size: 22px; font-weight: bold; color: #1f2937; margin-bottom: 20px; }
+.course-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+.course-card { background-color: white; border-radius: 8px; overflow: hidden; border: 1px solid #d1d5db; }
+
+/* Solid Color Thumbnails */
+.thumb { height: 140px; width: 100%; }
+.thumb-purple { background-color: #8b5cf6; }
+.thumb-orange { background-color: #f97316; }
+.thumb-teal { background-color: #14b8a6; }
+.thumb-blue { background-color: #3b82f6; }
+
+/* Card Body & Elements */
+.card-body { padding: 20px; }
+.course-title { font-size: 18px; font-weight: bold; color: #111827; margin-bottom: 10px; }
+.duration-bubble { display: inline-block; background-color: #e5e7eb; color: #4b5563; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; margin-bottom: 15px; }
+.edit-btn { width: 100%; padding: 10px; background-color: #f3f4f6; border: 1px solid #d1d5db; border-radius: 4px; color: #374151; font-weight: bold;  }
+.edit-btn:hover { background-color: #e5e7eb; }
+
+/* Right Area */
+.panel-card { background-color: white; padding: 25px; border-radius: 8px; border: 1px solid #d1d5db; }
+.panel-title { font-size: 18px; font-weight: bold; color: #1f2937; margin-bottom: 20px; }
+.drag-drop-zone { border: 2px dashed #9ca3af; background-color: #f9fafb; padding: 40px 20px; text-align: center; border-radius: 6px; margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+.upload-text { font-weight: bold; color: #4b5563; }
+.upload-sub { font-size: 12px; color: #6b7280; }
+.browse-btn { width: 100%; padding: 12px; background-color: #111827; color: white; border: none; border-radius: 4px; font-weight: bold;  font-size: 15px; }
+.browse-btn:hover { background-color: #374151; }

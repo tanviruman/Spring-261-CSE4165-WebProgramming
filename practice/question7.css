@@ -1,0 +1,373 @@
+/* Base Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Layout Wrapper */
+.layout-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Left Menu Layout */
+.left-menu {
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #e1e5eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    border-bottom: 1px solid #e1e5eb;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.menu-items {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-link {
+    padding: 12px 25px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.menu-link:hover {
+    background-color: #f8fafc;
+}
+
+.menu-link.active {
+    color: #2563eb;
+    background-color: #eff6ff;
+    border-right: 3px solid #2563eb;
+}
+
+/* Main Workspace */
+.workspace {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e5eb;
+}
+
+.nav-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.user-control {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification-badge {
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Content Area */
+.content-area {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.metric-card {
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    border: 1px solid #e1e5eb;
+}
+
+.bg-white { background-color: #ffffff; }
+
+.metric-label {
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.metric-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.text-blue { color: #2563eb; }
+.text-orange { color: #f59e0b; }
+.text-green { color: #10b981; }
+.text-red { color: #ef4444; }
+
+/* Form and Status Split Layout */
+.split-view {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.panel {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    border: 1px solid #e1e5eb;
+}
+
+.panel-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+/* Form Styles */
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-input, .form-select, .form-textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+/* Radio Buttons Group */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0;
+}
+
+/* Side Panels Group */
+.side-panel-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Progress Bar Panel */
+.progress-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.progress-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.progress-percent {
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.progress-track {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #2563eb;
+    border-radius: 10px;
+}
+
+.progress-hint {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* Ticket List Panel */
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ticket-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #cbd5e1;
+}
+
+.border-red { border-left-color: #ef4444; }
+.border-orange { border-left-color: #f59e0b; }
+.border-blue { border-left-color: #3b82f6; }
+
+.ticket-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ticket-id {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #475569;
+}
+
+.ticket-desc {
+    font-size: 0.95rem;
+    color: #1e293b;
+    font-weight: 500;
+}
+
+.ticket-time {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 500;
+}

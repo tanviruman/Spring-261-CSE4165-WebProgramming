@@ -1,0 +1,32 @@
+* { box-sizing: border-box; font-family: sans-serif; margin: 0; padding: 0; }
+
+.workspace-app { display: flex; height: 100vh; background-color: #f8f9fa; }
+
+/* Sidebar */
+.sidebar { width: 220px; background-color: #212529; color: white; padding: 20px 0; }
+.logo { font-size: 20px; font-weight: bold; padding: 0 20px 30px; letter-spacing: 1px;}
+.menu-item { padding: 12px 20px; cursor: pointer; color: #adb5bd; font-size: 14px;}
+
+/* Main Area */
+.main-area { flex-grow: 1; padding: 20px 40px; }
+.top-bar { display: flex; justify-content: space-between; margin-bottom: 30px; }
+.search-input { padding: 8px; width: 250px; border: 1px solid #ced4da; }
+.square-profile { 
+    width: 35px; height: 35px; background-color: #0dcaf0; color: #000;
+    display: flex; justify-content: center; align-items: center; font-weight: bold;
+}
+
+/* Desk Grid */
+.desk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.desk-card { background-color: white; padding: 20px; border: 1px solid #dee2e6; }
+.card-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.desk-title { font-weight: bold; color: #343a40; }
+
+/* Status Bubbles */
+.status-bubble { width: 12px; height: 12px; border-radius: 50%; }
+.available { background-color: #198754; }
+.taken { background-color: #dc3545; }
+
+/* Buttons */
+.book-btn { background-color: #212529; color: white; border: none; padding: 8px 12px;}
+.disabled { background-color: #e9ecef; color: #6c757d; }

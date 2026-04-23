@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="question4.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="brand-text">CareDash</div>
+            <div class="nav-links">
+                <div class="nav-item active">Ward Overview</div>
+                <div class="nav-item">Patient Directory</div>
+                <div class="nav-item">Bed Management</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="page-title">Ward Overview</div>
+                <div class="user-controls">
+                    <input type="text" class="search-box" placeholder="Search patients...">
+                    <div class="profile-container">
+                        <div class="profile-circle">RN</div>
+                        <div class="notification-dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card bg-blue">
+                    <div class="stat-label">Total Patients</div>
+                    <div class="stat-number">42</div>
+                </div>
+                <div class="stat-card bg-green">
+                    <div class="stat-label">Available Beds</div>
+                    <div class="stat-number">8</div>
+                </div>
+                <div class="stat-card bg-dark">
+                    <div class="stat-label">Critical Cases</div>
+                    <div class="stat-number">3</div>
+                </div>
+            </div>
+
+            <!-- Patient List -->
+            <div class="section-heading">Recent Admittances</div>
+            <div class="patient-list">
+                <!-- Patient 1 -->
+                <div class="patient-card">
+                    <div class="patient-info">
+                        <div class="patient-name">John Doe</div>
+                        <div class="patient-room">Room 302A</div>
+                    </div>
+                    <div class="status-bubble bubble-red">High Priority</div>
+                    <button class="action-btn">View Details</button>
+                </div>
+
+                <!-- Patient 2 -->
+                <div class="patient-card">
+                    <div class="patient-info">
+                        <div class="patient-name">Sarah Smith</div>
+                        <div class="patient-room">Room 305B</div>
+                    </div>
+                    <div class="status-bubble bubble-green">Stable</div>
+                    <button class="action-btn">View Details</button>
+                </div>
+
+                <!-- Patient 3 -->
+                <div class="patient-card">
+                    <div class="patient-info">
+                        <div class="patient-name">Michael Brown</div>
+                        <div class="patient-room">Room 310C</div>
+                    </div>
+                    <div class="status-bubble bubble-green">Stable</div>
+                    <button class="action-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

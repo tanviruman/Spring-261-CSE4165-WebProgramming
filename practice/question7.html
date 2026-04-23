@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Desk Dashboard</title>
+    <link rel="stylesheet" href="question7.css">
+</head>
+<body>
+    <div class="layout-wrapper">
+        
+        <!-- Left Menu -->
+        <div class="left-menu">
+            <div class="logo-container">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">SupportDesk</div>
+            </div>
+            <div class="menu-items">
+                <div class="menu-link active">Overview</div>
+                <div class="menu-link">All Tickets</div>
+                <div class="menu-link">Analytics</div>
+                <div class="menu-link">Customers</div>
+            </div>
+        </div>
+
+        <!-- Main Workspace -->
+        <div class="workspace">
+            
+            <!-- Top Navigation -->
+            <div class="top-nav">
+                <div class="nav-title">Ticket Management</div>
+                <div class="user-control">
+                    <div class="notification-badge">3</div>
+                    <div class="user-avatar">AD</div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card bg-white">
+                        <div class="metric-label">Open Tickets</div>
+                        <div class="metric-number text-blue">24</div>
+                    </div>
+                    <div class="metric-card bg-white">
+                        <div class="metric-label">Pending Review</div>
+                        <div class="metric-number text-orange">8</div>
+                    </div>
+                    <div class="metric-card bg-white">
+                        <div class="metric-label">Resolved Today</div>
+                        <div class="metric-number text-green">15</div>
+                    </div>
+                </div>
+
+                <!-- Two-Column Layout (Form and Status) -->
+                <div class="split-view">
+                    
+                    <!-- Form Container (Left) -->
+                    <div class="panel form-panel">
+                        <div class="panel-title">Create New Ticket</div>
+                        
+                        <form class="ticket-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Customer Name</label>
+                                    <input type="text" class="form-input" placeholder="e.g. Jane Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-input" placeholder="jane@example.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Issue Category</label>
+                                <select class="form-select">
+                                    <option value="" disabled selected>Select a category</option>
+                                    <option value="billing">Billing & Payments</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="account">Account Access</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Priority Level</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="priority" value="low"> Low
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="priority" value="medium" checked> Medium
+                                    </label>
+                                    <label class="radio-label text-red">
+                                        <input type="radio" name="priority" value="high"> High
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Issue Description</label>
+                                <textarea class="form-textarea" rows="4" placeholder="Describe the problem in detail..."></textarea>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-secondary">Clear Form</button>
+                                <button type="submit" class="btn btn-primary">Submit Ticket</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Side Information Container (Right) -->
+                    <div class="side-panel-group">
+                        
+                        <!-- SLA Progress Box -->
+                        <div class="panel progress-panel">
+                            <div class="panel-title">SLA Compliance Goal</div>
+                            <div class="progress-details">
+                                <div class="progress-text">Daily Target</div>
+                                <div class="progress-percent">82%</div>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 82%;"></div>
+                            </div>
+                            <div class="progress-hint">You are 8% away from the daily 90% goal.</div>
+                        </div>
+
+                        <!-- Recent Tickets List -->
+                        <div class="panel list-panel">
+                            <div class="panel-title">Recent Urgent Tickets</div>
+                            <div class="ticket-list">
+                                <div class="ticket-item border-red">
+                                    <div class="ticket-info">
+                                        <div class="ticket-id">#TCK-9021</div>
+                                        <div class="ticket-desc">Server downtime reported</div>
+                                    </div>
+                                    <div class="ticket-time">10m ago</div>
+                                </div>
+                                <div class="ticket-item border-orange">
+                                    <div class="ticket-info">
+                                        <div class="ticket-id">#TCK-9020</div>
+                                        <div class="ticket-desc">Payment gateway failure</div>
+                                    </div>
+                                    <div class="ticket-time">1h ago</div>
+                                </div>
+                                <div class="ticket-item border-blue">
+                                    <div class="ticket-info">
+                                        <div class="ticket-id">#TCK-9018</div>
+                                        <div class="ticket-desc">Cannot reset password</div>
+                                    </div>
+                                    <div class="ticket-time">3h ago</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

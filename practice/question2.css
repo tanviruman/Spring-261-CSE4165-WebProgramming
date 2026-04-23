@@ -1,0 +1,54 @@
+* { box-sizing: border-box; font-family: sans-serif; margin: 0; padding: 0; }
+body { background-color: #f4f5f7; }
+
+.rental-app {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    height: 100vh;
+}
+
+/* Left Area */
+.left-content { padding: 30px; }
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.brand { font-size: 24px; font-weight: bold; color: #1a1a1a; }
+.search-bar { padding: 10px 15px; width: 300px; border: 1px solid #ccc; border-radius: 4px; }
+.profile-icon {
+    width: 40px; height: 40px; border-radius: 50%;
+    background-color: #0056b3; color: white;
+    display: flex; justify-content: center; align-items: center; font-weight: bold;
+}
+
+/* Grid & Cards */
+.gadget-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+
+.card { padding: 20px; border-radius: 8px; position: relative; height: 120px; }
+.card-gray { background-color: #e2e8f0; }
+.card-blue { background-color: #dbeafe; }
+
+.card-title { font-weight: bold; color: #333; margin-bottom: 15px; }
+.price-bubble {
+    display: inline-block; background-color: #1e293b; color: white;
+    padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: bold;
+}
+
+/* Right Area */
+.right-cart {
+    background-color: #1e293b; color: white; padding: 30px;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+
+.cart-title { font-size: 20px; font-weight: bold; border-bottom: 1px solid #334155; padding-bottom: 10px;}
+.cart-subtotal { margin-top: 20px; font-size: 16px; color: #cbd5e1; flex-grow: 1; }
+.checkout-btn {
+    background-color: #3b82f6; color: white; border: none; padding: 15px;
+    border-radius: 4px; font-size: 16px; cursor: pointer; width: 100%;
+}
