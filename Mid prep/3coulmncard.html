@@ -25,20 +25,15 @@
       border-radius: 8px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     }
+   
 
     /* ── YOUR QUESTION CSS BELOW ── */
 
-    .navbar {
-  display: flex;
-  justify-content: space-between;  /* Logo left, Links right */
-  align-items: center;             /* Vertically centered */
-  padding: 16px 40px;
-  background-color: #f9fbff;
-}
-.nav-links {
-  display: flex;
-  gap: 24px;    /* Space between links */
-  list-style: none;
+.card-grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);  /* 3 equal columns */
+  gap: 20px;
+  padding: 40px;
 }
 
 
@@ -47,18 +42,20 @@
 <body>
 
   <!-- YOUR HTML BELOW -->
-   <nav class="navbar">
-  <div class="logo">
-    <h2>MyLogo</h2>
-  </div>
 
-  <ul class="nav-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
+  <div class="card-grid">
+  <div class="card">
+    Card 1
+<br>
+<br>
+mew mew 
+
+
+  </div>
+  
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+</div>
 
 </body>
 </html>

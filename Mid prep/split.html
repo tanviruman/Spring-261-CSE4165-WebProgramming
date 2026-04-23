@@ -28,7 +28,15 @@
 
     /* ── YOUR QUESTION CSS BELOW ── */
 
-    .navbar {
+    .split-container {
+  display: flex;
+  min-height: 100vh;
+}
+.left-panel  { flex: 1; background: #0976a7; padding: 60px; }
+.right-panel { flex: 1; padding: 60px; }
+
+
+ .navbar {
   display: flex;
   justify-content: space-between;  /* Logo left, Links right */
   align-items: center;             /* Vertically centered */
@@ -39,15 +47,12 @@
   display: flex;
   gap: 24px;    /* Space between links */
   list-style: none;
-}
-
-
+} 
   </style>
 </head>
 <body>
 
-  <!-- YOUR HTML BELOW -->
-   <nav class="navbar">
+     <nav class="navbar">
   <div class="logo">
     <h2>MyLogo</h2>
   </div>
@@ -60,5 +65,23 @@
   </ul>
 </nav>
 
+    <div class="split-container">
+      <div class="left-panel">
+        <h2>Left Panel</h2>
+        <p>This is the left panel content.</p>
+      </div>
+      <div class="right-panel">
+        <h2>Right Panel</h2>
+        <p>This is the right panel content.</p>
+      </div>
+    </div>
+
+    
+
+  <!-- YOUR HTML BELOW -->
+
 </body>
 </html>
+
+
+

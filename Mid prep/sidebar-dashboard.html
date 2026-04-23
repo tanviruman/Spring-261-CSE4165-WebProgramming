@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Form</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    a { text-decoration: none; color: #fff; }
+    ul { list-style: none; }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background: #1e3a5f;
+      padding: 24px;
+      color: white;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+
+    .main {
+      padding: 24px;
+      background: #f8f9fa;
+    }
+
+    form {
+      max-width: 400px;
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn-group {
+      margin-top: 15px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn.reset {
+      background: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <h3>Sidebar</h3>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+  </aside>
+
+  <div class="main">
+    <h1>Main Content</h1>
+
+    <form>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname"
+             placeholder="Enter full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"
+             placeholder="name@students.uiu.ac.bd" required>
+
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" name="password"
+             placeholder="Enter password" minlength="8">
+
+      <label for="dept">Department:</label>
+      <select id="dept" name="dept">
+        <option value="">-- Select --</option>
+        <option value="cse">CSE</option>
+        <option value="eee">EEE</option>
+      </select>
+
+      <div style="margin-top:10px;">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the Terms of Service</label>
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" class="btn">Register</button>
+        <button type="reset" class="btn reset">Clear</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+</body>
+</html>
