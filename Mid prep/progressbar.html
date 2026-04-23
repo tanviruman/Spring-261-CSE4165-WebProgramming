@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+.+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -29,11 +29,49 @@
 
     /* ── YOUR QUESTION CSS BELOW ── */
 
+   .page { display:grid;
+grid-template-areas: "header header"
+"sidebar main"
+"footer footer";
+grid-template-columns:240px 1fr;
+grid-template-rows:64px 1fr 50px; }
+.header { grid-area:header; }
+/* Progress Bar = div inside div */
+.progress-track { width:100%; height:6px;
+background:#ddd; border-radius:3px; }
+.progress-fill { height:100%; background:#16a34a;
+border-radius:3px; /* width set inline: 75% */ }
+
   </style>
 </head>
 <body>
 
   <!-- YOUR HTML BELOW -->
+
+  <div class="page">
+
+  <header class="header">
+    <h2>Header</h2>
+  </header>
+
+  <aside class="sidebar">
+    <p>Sidebar</p>
+  </aside>
+
+  <main class="main">
+    <h3>Progress Example</h3>
+
+    <div class="progress-track">
+      <div class="progress-fill" style="width: 75%;"></div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Footer</p>
+  </footer>
+
+</div>
 
 </body>
 </html>

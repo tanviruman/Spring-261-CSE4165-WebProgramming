@@ -29,11 +29,44 @@
 
     /* ── YOUR QUESTION CSS BELOW ── */
 
+    .full-width-item {
+  grid-column: 1 / -1;  /* Spans ALL columns */
+}
+
   </style>
 </head>
 <body>
 
   <!-- YOUR HTML BELOW -->
+
+<div class="card-grid">
+  <div class="card">
+    <h3>Card 1</h3>
+    <p>Normal item</p>
+  </div>
+
+  <div class="card">
+    <h3>Card 2</h3>
+    <p>Normal item</p>
+  </div>
+
+  <div class="card full-width-item">
+    <h3>Full Width Card</h3>
+    <p>This card spans all columns</p>
+  </div>
+
+  <div class="card">
+    <h3>Card 3</h3>
+    <p>Normal item</p>
+  </div>
+
+  <div class="card">
+    <h3>Card 4</h3>
+    <p>Normal item</p>
+  </div>
+</div>
+
+
 
 </body>
 </html>

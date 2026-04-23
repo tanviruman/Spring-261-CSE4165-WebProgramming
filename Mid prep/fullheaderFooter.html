@@ -29,11 +29,41 @@
 
     /* ── YOUR QUESTION CSS BELOW ── */
 
-  </style>
+    .page {
+display: grid;
+grid-template-columns: 240px 1fr;
+grid-template-rows: 64px 1fr 50px;
+height: 100vh;
+}
+.header { grid-column: 1 / -1; 
+background-color: #2563eb;} /* full width */
+.footer { grid-column: 1 / -1;
+background-color: #cf1c1c; } /* full width */
+  </style>                    
 </head>
 <body>
 
   <!-- YOUR HTML BELOW -->
+
+  <div class="page">
+  
+  <header class="header">
+    <h2>Header</h2>
+  </header>
+
+  <aside class="sidebar">
+    <p>Sidebar</p>
+  </aside>
+
+  <main class="content">
+    <p>Main Content Area</p>
+  </main>
+
+  <footer class="footer">
+    <p>Footer</p>
+  </footer>
+
+</div>
 
 </body>
 </html>
